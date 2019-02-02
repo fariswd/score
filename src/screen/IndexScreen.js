@@ -7,8 +7,12 @@ import {
 import { Constants } from 'expo'
 
 import Counter from '../component/Counter'
+import Timer from '../component/Timer'
+import Turn from '../component/Turn'
+
 import { container, halfContainer, center } from "../utlis/style";
 import { textCenter, giant, big, medium, small, tiny, colorGray } from "../utlis/text";
+import color from '../utlis/color';
 
 
 export default class IndexScreen extends React.Component {
@@ -45,12 +49,16 @@ export default class IndexScreen extends React.Component {
   render() {
     return (
       <>
-        <View style={halfContainer} />
+        <View style={[halfContainer, {backgroundColor: color.lavender}]}>
+          <Timer />
+        </View>
         <View style={[container, { flexDirection: "row" }]}>
           {this.counter(this.state.teamA)}
           {this.counter(this.state.teamB)}
         </View>
-        <View style={halfContainer} />
+        <View style={[halfContainer, {backgroundColor: 'powderblue'}]} >
+          <Turn />
+        </View>
       </>
     );
   }

@@ -8,6 +8,8 @@ export const container = {
   flex: 1,
 }
 
+export const row = { flexDirection: 'row' }
+
 export const center = {
   justifyContent: 'center',
   alignItems: 'center',

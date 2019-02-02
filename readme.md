@@ -1,5 +1,5 @@
 # Score
-Dual counter for scoring something 🤣
+Dual counter for scoring something 🤣  
 <img src="https://raw.githubusercontent.com/fariswd/score/master/ss.png" height="300">
 
 ## Run?
